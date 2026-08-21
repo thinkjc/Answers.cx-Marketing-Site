@@ -40,7 +40,7 @@ describe("createPageHeadFromContent", () => {
 		});
 
 		expect(head.links).toEqual([
-			{ rel: "canonical", href: "https://cxconnect.ai/contact" },
+			{ rel: "canonical", href: "https://answers.cx/contact" },
 		]);
 	});
 });

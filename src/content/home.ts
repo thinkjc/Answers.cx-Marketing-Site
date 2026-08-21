@@ -133,7 +133,7 @@ export const comparisonRows: ComparisonRow[] = [
 	{
 		category: "Purpose",
 		answerLayer:
-			"Built for words—the unstructured voices of your customers—and numbers",
+			"Built for the words your customers use—not just the numbers your systems store",
 		builtIn: "Built for numbers (e.g. call volume)",
 		traditional: "Built for numbers (e.g. AHT by region)",
 	},
@@ -211,7 +211,7 @@ export const faqItems: FaqItem[] = [
 		question:
 			"How is your approach different from legacy analytics / reporting tools?",
 		answer:
-			"The Answer Layer is built for the unstructured voices of your customers—not just ticket counts. Anyone who can talk or type can get real-time answers without weeks of training or report requests.",
+			"Built for the words your customers use—not just the numbers your systems store. Anyone who can talk or type can get real-time answers without weeks of training or report requests.",
 	},
 	{
 		question: "Can we try your platform before committing?",

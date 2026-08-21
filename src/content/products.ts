@@ -106,13 +106,13 @@ export const languages: ProductPageContent = {
 	seo: {
 		title: "Languages",
 		description:
-			"Support customers and agents in 150+ languages with cxconnect.ai multilingual capabilities.",
+			"Support customers and agents in 150+ languages with Answers.cx multilingual capabilities.",
 		path: "/languages",
 	},
 	hero: {
 		eyebrow: "Languages",
 		title: "Speak your customers' language—literally.",
-		lead: "cxconnect.ai helps global brands deliver support that feels local, whether you operate in five languages or five hundred.",
+		lead: "Answers.cx helps global brands deliver support that feels local, whether you operate in five languages or five hundred.",
 		primaryCta: "Get in touch",
 	},
 	featureBand: {

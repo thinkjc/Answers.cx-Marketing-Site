@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://cxconnect.ai/</loc></url>
-  <url><loc>https://cxconnect.ai/theanswerlayer</loc></url>
-  <url><loc>https://cxconnect.ai/hire-your-team</loc></url>
-  <url><loc>https://cxconnect.ai/daily-signal</loc></url>
-  <url><loc>https://cxconnect.ai/company-pulse</loc></url>
-  <url><loc>https://cxconnect.ai/translations</loc></url>
-  <url><loc>https://cxconnect.ai/languages</loc></url>
-  <url><loc>https://cxconnect.ai/data-connectors</loc></url>
-  <url><loc>https://cxconnect.ai/features</loc></url>
-  <url><loc>https://cxconnect.ai/about</loc></url>
-  <url><loc>https://cxconnect.ai/contact</loc></url>
-  <url><loc>https://cxconnect.ai/pricing</loc></url>
-  <url><loc>https://cxconnect.ai/legal/terms-of-service</loc></url>
-  <url><loc>https://cxconnect.ai/legal/privacy-policy</loc></url>
-  <url><loc>https://cxconnect.ai/blog</loc></url>
-  <url><loc>https://cxconnect.ai/blog/the-answer-layer-before-the-dashboard</loc></url>
-  <url><loc>https://cxconnect.ai/blog/hire-ai-agents-not-another-chatbot</loc></url>
-  <url><loc>https://cxconnect.ai/blog/multilingual-cx-breaks-in-the-reporting-layer</loc></url>
-  <url><loc>https://cxconnect.ai/blog/from-ticket-exports-to-executive-briefings</loc></url>
-  <url><loc>https://cxconnect.ai/blog/governed-answers-from-messy-data</loc></url>
-  <url><loc>https://cxconnect.ai/blog/sync-engine-connectors-live</loc></url>
+  <url><loc>https://answers.cx/</loc></url>
+  <url><loc>https://answers.cx/theanswerlayer</loc></url>
+  <url><loc>https://answers.cx/hire-your-team</loc></url>
+  <url><loc>https://answers.cx/daily-signal</loc></url>
+  <url><loc>https://answers.cx/company-pulse</loc></url>
+  <url><loc>https://answers.cx/translations</loc></url>
+  <url><loc>https://answers.cx/languages</loc></url>
+  <url><loc>https://answers.cx/data-connectors</loc></url>
+  <url><loc>https://answers.cx/features</loc></url>
+  <url><loc>https://answers.cx/contact</loc></url>
+  <url><loc>https://answers.cx/pricing</loc></url>
+  <url><loc>https://answers.cx/legal/terms-of-service</loc></url>
+  <url><loc>https://answers.cx/legal/privacy-policy</loc></url>
 </urlset>

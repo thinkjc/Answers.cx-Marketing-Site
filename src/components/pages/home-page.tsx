@@ -1,44 +1,15 @@
 import { Link } from "@tanstack/react-router";
-import {
-	Award,
-	Ban,
-	Lock,
-	Shield,
-	Sparkles,
-	type LucideIcon,
-} from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 import { DailyBriefHeroGraphic } from "#/components/marketing/daily-brief-hero-graphic.tsx";
-import { ExplorePlansSection } from "#/components/marketing/explore-plans-section.tsx";
-import { FaqAccordion } from "#/components/marketing/faq-accordion.tsx";
 import { HomeAnswerLayerShowcaseSection } from "#/components/marketing/home-answer-layer-showcase-section.tsx";
 import { HomeHeroValueStrip } from "#/components/marketing/home-hero-value-strip.tsx";
-import { MarketingCard } from "#/components/marketing/marketing-card.tsx";
+import { MarketingCloser } from "#/components/marketing/marketing-closer.tsx";
 import { MeshGradient } from "#/components/marketing/mesh-gradient.tsx";
 import { SectionBand } from "#/components/marketing/section-band.tsx";
-import { SocialProofSection } from "#/components/marketing/social-proof-section.tsx";
-import { StackIntegrationStrip } from "#/components/marketing/stack-integration-strip.tsx";
 import { TrustedByCarousel } from "#/components/marketing/trusted-by-carousel.tsx";
 import { Button } from "#/components/ui/button.tsx";
-import {
-	explorePlans,
-	faqItems,
-	hireYourTeamPageContent,
-	privacySecurityPoints,
-	socialProof,
-	stackIntegration,
-} from "#/content/home-team.ts";
-import { siteConfig } from "#/config/site.ts";
-
-const privacySecurityIcons = {
-	award: Award,
-	shield: Shield,
-	lock: Lock,
-	ban: Ban,
-} as const satisfies Record<
-	(typeof privacySecurityPoints)[number]["icon"],
-	LucideIcon
->;
+import { hireYourTeamPageContent } from "#/content/home-team.ts";
 
 export function HomePage() {
 	return (
@@ -97,77 +68,7 @@ export function HomePage() {
 				<HomeAnswerLayerShowcaseSection className="rounded-none sm:rounded-[var(--rounded-xl)]" />
 			</SectionBand>
 
-			<StackIntegrationStrip content={stackIntegration} />
-
-			<SocialProofSection content={socialProof} />
-
-			<ExplorePlansSection content={explorePlans} className="mt-0" />
-
-			<SectionBand variant="soft">
-				<div className="mb-12 max-w-3xl">
-					<p className="section-eyebrow mb-4">Privacy &amp; security</p>
-					<h2 className="text-display-lg mb-4">
-						Safe to bring to your board. Safe to connect your data.
-					</h2>
-					<p className="text-body-lg text-body">
-						Your AI Agents only work with data you connect, under controls
-						your security and legal teams can stand behind.
-					</p>
-				</div>
-				<div className="mb-10 grid gap-4 sm:grid-cols-2 sm:gap-5">
-					{privacySecurityPoints.map((item) => {
-						const Icon = privacySecurityIcons[item.icon];
-						return (
-							<div
-								key={item.title}
-								className="group relative overflow-hidden rounded-[var(--rounded-md)] border border-hairline bg-canvas p-6 shadow-[var(--shadow-elev-2)] transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-0.5 hover:border-link/30 hover:shadow-[var(--shadow-elev-4)]"
-							>
-								<div
-									className="pointer-events-none absolute -top-16 -right-16 size-40 rounded-full bg-link/5 opacity-0 blur-3xl transition-opacity duration-300 group-hover:opacity-100"
-									aria-hidden
-								/>
-								<div className="relative flex gap-4">
-									<span className="inline-flex size-11 shrink-0 items-center justify-center rounded-[var(--rounded-md)] border border-link/15 bg-link-bg-soft text-link">
-										<Icon className="size-5" aria-hidden />
-									</span>
-									<div>
-										<h3 className="text-body-md-strong mb-2 text-ink">
-											{item.title}
-										</h3>
-										<p className="text-body-sm leading-relaxed text-body">
-											{item.description}
-										</p>
-									</div>
-								</div>
-							</div>
-						);
-					})}
-				</div>
-				<div className="text-center">
-					<Button asChild variant="outline" size="lg">
-						<a
-							href={siteConfig.trustCenterUrl}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							View our Trust Center
-						</a>
-					</Button>
-				</div>
-			</SectionBand>
-
-			<SectionBand>
-				<div className="mx-auto mb-10 max-w-2xl text-center md:mb-12">
-					<p className="section-eyebrow mb-4">FAQ</p>
-					<h2 className="text-display-lg">Answers to common questions.</h2>
-				</div>
-				<MarketingCard
-					variant="large"
-					className="mx-auto max-w-3xl p-4 sm:p-6 md:p-8"
-				>
-					<FaqAccordion items={[...faqItems]} />
-				</MarketingCard>
-			</SectionBand>
+			<MarketingCloser />
 
 			<section className="relative overflow-hidden bg-[var(--surface-inverse)] py-[var(--spacing-4xl)] text-[var(--on-inverse)] md:py-[var(--spacing-5xl)]">
 				<span

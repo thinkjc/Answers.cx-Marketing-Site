@@ -11,9 +11,10 @@ export const blogIndexContent = {
 		description:
 			"Product updates, customer stories, and practical guidance on building an answer layer for CX leaders—multilingual support, AI Agents, and governed insights.",
 		path: "/blog",
+		noIndex: true,
 	},
 	title: "Now",
-	lead: "Updates from the cxconnect.ai team on the answer layer, AI Agents, and customer-led growth.",
+	lead: "Updates from the Answers.cx team on the answer layer, AI Agents, and customer-led growth.",
 } satisfies BlogIndexContent;
 
 export const blogChangelogEntries = [
@@ -45,13 +46,13 @@ export const blogPressEntries = [
 		title: "The answer layer for customer conversations",
 		outlet: "CX Today",
 		publishedAt: "2026-03-18",
-		href: "https://cxconnect.ai",
+		href: "https://answers.cx",
 	},
 	{
 		title: "Multilingual support without the reporting tax",
 		outlet: "Support Driven",
 		publishedAt: "2026-02-04",
-		href: "https://cxconnect.ai",
+		href: "https://answers.cx",
 	},
 ] as const satisfies readonly BlogPressEntry[];
 
@@ -114,7 +115,7 @@ export const blogPosts = [
 			{
 				type: "quote",
 				text: "The best CX teams do not wait for Monday reporting. They operate with an answer layer that works while they sleep.",
-				attribution: "cxconnect.ai customer advisory board",
+				attribution: "Answers.cx customer advisory board",
 			},
 			{
 				type: "callout",
@@ -165,7 +166,7 @@ export const blogPosts = [
 			},
 			{
 				type: "paragraph",
-				text: "cxconnect.ai lets you hire a team of AI Agents: churn analysts, feedback compilers, compliance monitors, and more. Toggle who is on. Scale coverage up and down. Stay in control.",
+				text: "Answers.cx lets you hire a team of AI Agents: churn analysts, feedback compilers, compliance monitors, and more. Toggle who is on. Scale coverage up and down. Stay in control.",
 			},
 			{
 				type: "list",
@@ -228,7 +229,7 @@ export const blogPosts = [
 			{
 				type: "callout",
 				title: "AEO-friendly summary",
-				text: "cxconnect.ai connects multilingual conversation data to governed answers so CX leaders can report what customers want—in every market—without manual re-tagging or lost context.",
+				text: "Answers.cx connects multilingual conversation data to governed answers so CX leaders can report what customers want—in every market—without manual re-tagging or lost context.",
 			},
 		],
 		seo: {
@@ -265,7 +266,7 @@ export const blogPosts = [
 			},
 			{
 				type: "paragraph",
-				text: "They piloted cxconnect.ai with a Churn Risk Analyst and Product Feedback Compiler, both fed by Sync Engine connectors. Within two weeks, standing summaries replaced three recurring manual reports.",
+				text: "They piloted Answers.cx with a Churn Risk Analyst and Product Feedback Compiler, both fed by Sync Engine connectors. Within two weeks, standing summaries replaced three recurring manual reports.",
 			},
 			{
 				type: "quote",
@@ -298,7 +299,7 @@ export const blogPosts = [
 		],
 		faqs: [
 			{
-				question: "Does cxconnect.ai train models on customer data?",
+				question: "Does Answers.cx train models on customer data?",
 				answer:
 					"No. What your AI Agents learn from stays in your environment; customer data is not used to train language models.",
 			},
@@ -320,7 +321,7 @@ export const blogPosts = [
 		seo: {
 			title: "Governed answers from messy data",
 			description:
-				"How cxconnect.ai harmonizes tickets, chats, and CRM data into governed answers with traceable sources and enterprise controls.",
+				"How Answers.cx harmonizes tickets, chats, and CRM data into governed answers with traceable sources and enterprise controls.",
 			path: "/blog/governed-answers-from-messy-data",
 		},
 	},
@@ -330,7 +331,7 @@ export const blogPosts = [
 		dek: "Connect the systems you already use in minutes—not months—and keep data fresh on your schedule.",
 		category: "changelog",
 		publishedAt: "2026-05-28",
-		authors: [{ name: "Product team", role: "cxconnect.ai" }],
+		authors: [{ name: "Product team", role: "Answers.cx" }],
 		tags: ["changelog", "Sync Engine", "connectors"],
 		takeaways: [
 			"Pre-built connectors for major CX and CRM platforms",
@@ -351,7 +352,7 @@ export const blogPosts = [
 		seo: {
 			title: "Sync Engine connectors launch",
 			description:
-				"cxconnect.ai Sync Engine adds pre-built connectors for Salesforce, Zendesk, Genesys, and other CX platforms.",
+				"Answers.cx Sync Engine adds pre-built connectors for Salesforce, Zendesk, Genesys, and other CX platforms.",
 			path: "/blog/sync-engine-connectors-live",
 		},
 	},

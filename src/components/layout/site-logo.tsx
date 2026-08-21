@@ -8,11 +8,11 @@ export function SiteLogo({ className }: SiteLogoProps) {
 	return (
 		<span className={cn("inline-flex items-center", className)}>
 			<img
-				src="/logo-cxconnect-wordmark.png"
-				alt="cxconnect.ai"
-				className="h-5 w-auto sm:h-[1.375rem]"
-				width={165}
-				height={20}
+				src="/logo-answers-wordmark.png"
+				alt="Answers.cx"
+				className="h-6 w-auto sm:h-7"
+				width={168}
+				height={30}
 				decoding="async"
 			/>
 		</span>

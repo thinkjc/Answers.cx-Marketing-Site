@@ -15,6 +15,7 @@ import { AnswerLayerHeroGraphic } from "#/components/marketing/answer-layer-hero
 import { AnswerLayerShowcaseSection } from "#/components/marketing/answer-layer-showcase-section.tsx";
 import { FaqAccordion } from "#/components/marketing/faq-accordion.tsx";
 import { MarketingCard } from "#/components/marketing/marketing-card.tsx";
+import { MarketingCloser } from "#/components/marketing/marketing-closer.tsx";
 import { MeshGradient } from "#/components/marketing/mesh-gradient.tsx";
 import { SectionBand } from "#/components/marketing/section-band.tsx";
 import { StackIntegrationStrip } from "#/components/marketing/stack-integration-strip.tsx";
@@ -244,6 +245,8 @@ export function TheAnswerLayerPage() {
 			</SectionBand>
 
 			<StackIntegrationStrip content={content.stackIntegration} />
+
+			<MarketingCloser stack={false} privacy={false} faq={false} />
 
 			<SectionBand variant="dark" className="relative overflow-hidden">
 				<div

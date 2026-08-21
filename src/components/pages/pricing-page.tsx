@@ -4,6 +4,7 @@ import { Check } from "lucide-react";
 import { FaqAccordion } from "#/components/marketing/faq-accordion.tsx";
 import { LogoStrip } from "#/components/marketing/logo-strip.tsx";
 import { MarketingCard } from "#/components/marketing/marketing-card.tsx";
+import { MarketingCloser } from "#/components/marketing/marketing-closer.tsx";
 import { MarketingHero } from "#/components/marketing/marketing-hero.tsx";
 import { SectionBand } from "#/components/marketing/section-band.tsx";
 import { Button } from "#/components/ui/button.tsx";
@@ -67,16 +68,14 @@ export function PricingPage() {
 				<div className="mx-auto max-w-3xl text-center">
 					<p className="section-eyebrow mb-4">{customers.eyebrow}</p>
 					<h2 className="text-display-lg mb-4">{customers.title}</h2>
-					<p className="text-body-lg mb-3 text-body">{customers.lead}</p>
-					<p className="text-body-md-strong text-ink">{customers.tagline}</p>
+					<p className="text-body-lg text-body">{customers.lead}</p>
 				</div>
 				<div className="mt-14">
-					<LogoStrip
-						title="Trusted by the most valuable brands"
-						className="max-w-5xl"
-					/>
+					<LogoStrip className="max-w-5xl" />
 				</div>
 			</SectionBand>
+
+			<MarketingCloser pricing={false} faq={false} />
 
 			<SectionBand variant="soft">
 				<div className="mx-auto max-w-3xl">

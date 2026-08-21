@@ -72,8 +72,9 @@ export function createArticlePageHead({
 	description,
 	path,
 	type = "article",
+	noIndex = false,
 }: PageSeo & { type?: "website" | "article" }) {
-	const head = createPageHead({ title, description, path });
+	const head = createPageHead({ title, description, path, noIndex });
 	const fullTitle = pageTitle(title);
 
 	return {
@@ -96,5 +97,6 @@ export function createArticleHeadFromPost(seo: PageSeoContent) {
 		description: seo.description,
 		path: seo.path,
 		type: "article",
+		noIndex: seo.noIndex,
 	});
 }

@@ -20,6 +20,7 @@ import {
 import { CompanyPulseHeroGraphic } from "#/components/marketing/company-pulse-hero-graphic.tsx";
 import { FaqAccordion } from "#/components/marketing/faq-accordion.tsx";
 import { MarketingCard } from "#/components/marketing/marketing-card.tsx";
+import { MarketingCloser } from "#/components/marketing/marketing-closer.tsx";
 import { MarketingHero } from "#/components/marketing/marketing-hero.tsx";
 import { MeshGradient } from "#/components/marketing/mesh-gradient.tsx";
 import { SectionBand } from "#/components/marketing/section-band.tsx";
@@ -281,6 +282,8 @@ export function FeaturesPage() {
 					})}
 				</div>
 			</SectionBand>
+
+			<MarketingCloser privacy={false} faq={false} />
 
 			<SectionBand>
 				<div className="mx-auto mb-12 max-w-3xl text-center">

@@ -4,7 +4,7 @@ export const contactPageContent = {
 	seo: {
 		title: "Contact Us",
 		description:
-			"Schedule a 20-minute product tour with the cxconnect.ai team or send us a message.",
+			"Schedule a 20-minute product tour with the Answers.cx team or send us a message.",
 		path: "/contact",
 	} satisfies PageSeoContent,
 	hero: {

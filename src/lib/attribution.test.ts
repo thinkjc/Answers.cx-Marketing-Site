@@ -14,7 +14,7 @@ describe("attribution", () => {
 	it("stores first-touch utm params", () => {
 		const originalLocation = window.location;
 		Object.defineProperty(window, "location", {
-			value: new URL("https://cxconnect.ai/contact?utm_source=linkedin"),
+			value: new URL("https://answers.cx/contact?utm_source=linkedin"),
 			writable: true,
 		});
 

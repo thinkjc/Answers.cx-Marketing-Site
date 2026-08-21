@@ -1,52 +1,13 @@
+import { trustedBrands, type TrustedBrand } from "#/content/trusted-brands.ts";
 import { cn } from "#/lib/utils.ts";
 
-export type TrustedByLogo = {
-	name: string;
-	src: string;
-	width?: number;
-	height?: number;
-};
-
-const defaultLogos: TrustedByLogo[] = [
-	{
-		name: "Deutsche Telekom",
-		src: "/images/trusted-by/deutsche-telekom.png",
-		width: 52,
-		height: 62,
-	},
-	{
-		name: "Kellogg's",
-		src: "/images/trusted-by/kelloggs.png",
-		width: 159,
-		height: 56,
-	},
-	{
-		name: "Pearson",
-		src: "/images/trusted-by/pearson.png",
-		width: 151,
-		height: 45,
-	},
-	{
-		name: "Caterpillar",
-		src: "/images/trusted-by/caterpillar.png",
-		width: 170,
-		height: 28,
-	},
-	{
-		name: "Coursera",
-		src: "/images/trusted-by/coursera.png",
-		width: 120,
-		height: 36,
-	},
-];
-
 type TrustedByCarouselProps = {
-	logos?: TrustedByLogo[];
+	logos?: readonly TrustedBrand[];
 	className?: string;
 };
 
 export function TrustedByCarousel({
-	logos = defaultLogos,
+	logos = trustedBrands,
 	className,
 }: TrustedByCarouselProps) {
 	const trackLogos = [...logos, ...logos];
@@ -70,16 +31,26 @@ export function TrustedByCarousel({
 			>
 				<div className="trusted-by-track flex w-max items-center gap-10 py-1">
 					{trackLogos.map((logo, index) => (
-						<img
+						<span
 							key={`${logo.name}-${index}`}
-							src={logo.src}
-							alt={logo.name}
-							width={logo.width}
-							height={logo.height}
-							className="h-7 w-auto max-w-[7.5rem] shrink-0 object-contain opacity-55 brightness-0 dark:opacity-70 dark:brightness-100"
-							loading="lazy"
-							decoding="async"
-						/>
+							className="flex shrink-0 items-center gap-2"
+						>
+							<img
+								src={logo.src}
+								alt={logo.showName ? "" : logo.name}
+								className={cn(
+									"w-auto shrink-0 object-contain opacity-70",
+									logo.name === "Epson"
+										? "h-8 max-w-[10rem]"
+										: "h-7 max-w-[7.5rem]",
+								)}
+							/>
+							{logo.showName ? (
+								<span className="whitespace-nowrap text-caption text-body">
+									{logo.name}
+								</span>
+							) : null}
+						</span>
 					))}
 				</div>
 			</div>

@@ -25,7 +25,8 @@ export type PageDefinition = {
 	disabled?: boolean;
 };
 
-const DOCS_URL = "https://docs.cxconnect.ai";
+const DOCS_URL =
+	"https://docs.cxconnect.ai/get-started/products/sync/sync-quickstart";
 
 export const pages = [
 	{
@@ -72,13 +73,6 @@ export const pages = [
 		sitemap: true,
 	},
 	{
-		path: "/data-connectors",
-		label: "Connectors",
-		navGroup: "integrations",
-		sitemap: true,
-		contactInterest: "Data Connectors",
-	},
-	{
 		path: "/features",
 		label: "Features",
 		navGroup: "features",
@@ -86,10 +80,16 @@ export const pages = [
 		contactInterest: "Features",
 	},
 	{
+		path: "/data-connectors",
+		label: "Connectors",
+		navGroup: "integrations",
+		sitemap: true,
+		contactInterest: "Data Connectors",
+	},
+	{
 		path: "/about",
 		label: "About Us",
-		navGroup: "company",
-		sitemap: true,
+		noIndex: true,
 	},
 	{
 		path: "/contact",
@@ -124,14 +124,13 @@ export const pages = [
 	{
 		path: "/case-studies",
 		label: "Case Studies",
-		navGroup: "resources",
 		disabled: true,
+		noIndex: true,
 	},
 	{
 		path: "/blog",
 		label: "Now",
-		navGroup: "resources",
-		sitemap: true,
+		noIndex: true,
 	},
 	{
 		path: DOCS_URL,

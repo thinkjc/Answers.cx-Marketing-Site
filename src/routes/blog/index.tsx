@@ -13,7 +13,7 @@ export const Route = createFileRoute("/blog/")({
 			{
 				rel: "alternate",
 				type: "application/rss+xml",
-				title: "cxconnect.ai Now",
+				title: "Answers.cx Now",
 				href: "/api/blog/rss",
 			},
 		],

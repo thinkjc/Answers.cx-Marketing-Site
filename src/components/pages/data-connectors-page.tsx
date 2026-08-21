@@ -2,7 +2,6 @@ import { Link } from "@tanstack/react-router";
 import {
 	Check,
 	Database,
-	ImageIcon,
 	Shield,
 	Sparkles,
 	Unplug,
@@ -14,6 +13,7 @@ import { MarketingHero } from "#/components/marketing/marketing-hero.tsx";
 import { MeshGradient } from "#/components/marketing/mesh-gradient.tsx";
 import { SectionBand } from "#/components/marketing/section-band.tsx";
 import { StackIntegrationStrip } from "#/components/marketing/stack-integration-strip.tsx";
+import { MarketingCloser } from "#/components/marketing/marketing-closer.tsx";
 import { Button } from "#/components/ui/button.tsx";
 import { siteConfig } from "#/config/site.ts";
 import {
@@ -80,27 +80,19 @@ export function DataConnectorsPage() {
 							variant="marketing"
 							className="flex h-full flex-col"
 						>
-							<div className="mb-5 flex items-center gap-3">
-								<span className="inline-flex h-12 min-w-[3rem] items-center justify-center rounded-[var(--rounded-md)] border border-hairline bg-canvas-soft px-3">
-									{connector.logo ? (
-										<img
-											src={connector.logo}
-											alt=""
-											className="max-h-7 w-auto max-w-[120px] object-contain"
-											loading="lazy"
-											decoding="async"
-										/>
-									) : (
-										<span
-											className="inline-flex size-8 items-center justify-center rounded-[var(--rounded-sm)] border border-dashed border-hairline-strong/70 text-mute"
-											aria-hidden
-										>
-											<ImageIcon className="size-4" />
-										</span>
-									)}
-								</span>
-								<h3 className="text-display-sm">{connector.name}</h3>
-							</div>
+							<h3 className="mb-5 flex h-12 items-center">
+								{connector.logo ? (
+									<img
+										src={connector.logo}
+										alt={connector.name}
+										className="max-h-8 w-auto max-w-[180px] object-contain"
+										loading="lazy"
+										decoding="async"
+									/>
+								) : (
+									<span className="text-display-sm">{connector.name}</span>
+								)}
+							</h3>
 							<p className="mb-5 flex-1 text-body-md text-body">
 								{connector.description}
 							</p>
@@ -222,6 +214,8 @@ export function DataConnectorsPage() {
 					</Button>
 				</div>
 			</SectionBand>
+
+			<MarketingCloser stack={false} privacy={false} faq={false} />
 
 			<SectionBand variant="soft">
 				<div className="mx-auto mb-10 max-w-2xl text-center md:mb-12">

@@ -12,7 +12,6 @@ import {
 	SheetTrigger,
 } from "#/components/ui/sheet.tsx";
 import {
-	companyLinks,
 	featuresLink,
 	integrationsLinks,
 	primaryCta,
@@ -21,52 +20,6 @@ import {
 } from "#/config/pages.ts";
 import { siteConfig } from "#/config/site.ts";
 import { cn } from "#/lib/utils.ts";
-
-function NavLinkItem({
-	href,
-	label,
-	external,
-	disabled,
-	onClick,
-}: {
-	href: string;
-	label: string;
-	external?: boolean;
-	disabled?: boolean;
-	onClick?: () => void;
-}) {
-	if (disabled) {
-		return (
-			<span className="cursor-not-allowed text-body-sm text-body/70">
-				{label}
-			</span>
-		);
-	}
-
-	if (external) {
-		return (
-			<a
-				href={href}
-				target="_blank"
-				rel="noopener noreferrer"
-				className="text-body-sm text-body transition-colors hover:text-ink"
-				onClick={onClick}
-			>
-				{label}
-			</a>
-		);
-	}
-
-	return (
-		<Link
-			to={href}
-			className="inline-flex min-h-11 items-center text-body-sm text-body transition-colors hover:text-ink"
-			onClick={onClick}
-		>
-			{label}
-		</Link>
-	);
-}
 
 /** Desktop dropdown — opens on hover, closes when pointer leaves the nav. */
 function NavDropdown({
@@ -88,7 +41,7 @@ function NavDropdown({
 		<div className="relative" onMouseEnter={() => onActivate(menuId)}>
 			<button
 				type="button"
-				className="inline-flex cursor-default items-center gap-1 rounded-[var(--rounded-sm)] px-3 py-2 text-body-sm text-body transition-colors hover:bg-canvas-soft hover:text-ink focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ring/30"
+				className="inline-flex cursor-default items-center gap-1 rounded-[var(--rounded-sm)] bg-transparent px-3 py-2 text-body-sm text-link transition-colors hover:bg-canvas-soft hover:text-link-deep focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ring/30"
 				aria-haspopup="true"
 				aria-expanded={open}
 				tabIndex={-1}
@@ -96,7 +49,7 @@ function NavDropdown({
 				{label}
 				<span
 					className={cn(
-						"text-mute transition-transform duration-200",
+						"transition-transform duration-200",
 						open && "rotate-180",
 					)}
 					aria-hidden
@@ -151,6 +104,14 @@ function DesktopNav() {
 				</ul>
 			</NavDropdown>
 
+			<Link
+				to={featuresLink.href}
+				className="rounded-[var(--rounded-sm)] px-3 py-2 text-body-sm text-body transition-colors hover:bg-canvas-soft hover:text-ink"
+				onMouseEnter={closeMenu}
+			>
+				{featuresLink.label}
+			</Link>
+
 			{integrationsLinks.map((link) => (
 				<Link
 					key={link.href}
@@ -162,32 +123,19 @@ function DesktopNav() {
 				</Link>
 			))}
 
-			<Link
-				to={featuresLink.href}
-				className="rounded-[var(--rounded-sm)] px-3 py-2 text-body-sm text-body transition-colors hover:bg-canvas-soft hover:text-ink"
-				onMouseEnter={closeMenu}
-			>
-				{featuresLink.label}
-			</Link>
-
-			<NavDropdown
-				menuId="resources"
-				activeMenu={activeMenu}
-				onActivate={setActiveMenu}
-				label="Resources"
-			>
-				<ul className="flex flex-col gap-2">
-					{resourcesLinks.map((link) => (
-						<li key={link.label}>
-							<NavLinkItem {...link} />
-						</li>
-					))}
-				</ul>
-			</NavDropdown>
-
-			{companyLinks
-				.filter((link) => link.href === "/about")
-				.map((link) => (
+			{resourcesLinks.map((link) =>
+				link.external ? (
+					<a
+						key={link.href}
+						href={link.href}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="rounded-[var(--rounded-sm)] px-3 py-2 text-body-sm text-body transition-colors hover:bg-canvas-soft hover:text-ink"
+						onMouseEnter={closeMenu}
+					>
+						{link.label}
+					</a>
+				) : (
 					<Link
 						key={link.href}
 						to={link.href}
@@ -196,7 +144,8 @@ function DesktopNav() {
 					>
 						{link.label}
 					</Link>
-				))}
+				),
+			)}
 		</nav>
 	);
 }
@@ -306,7 +255,7 @@ function MobileNav() {
 	const [open, setOpen] = useState(false);
 	const pathname = useRouterState({ select: (state) => state.location.pathname });
 	const closeMenu = () => setOpen(false);
-	const platformLinks = [...integrationsLinks, featuresLink];
+	const platformLinks = [featuresLink, ...integrationsLinks];
 
 	return (
 		<Sheet open={open} onOpenChange={setOpen}>
@@ -363,14 +312,6 @@ function MobileNav() {
 						<MobileNavSection label="Resources">
 							<MobileNavLinkList
 								links={resourcesLinks}
-								pathname={pathname}
-								onNavigate={closeMenu}
-							/>
-						</MobileNavSection>
-
-						<MobileNavSection label="Company">
-							<MobileNavLinkList
-								links={companyLinks.filter((link) => link.href === "/about")}
 								pathname={pathname}
 								onNavigate={closeMenu}
 							/>

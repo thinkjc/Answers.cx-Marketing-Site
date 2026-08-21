@@ -24,8 +24,8 @@ export const theAnswerLayerPageContent = {
 	},
 	problem: {
 		eyebrow: "The problem",
-		title: "Getting to that answer is still a project.",
-		lead: "The signal is there—in tickets, calls, CRM notes, and reviews. But today, turning it into something leadership can trust means hunting across platforms, rebuilding reports, and waiting on someone to stitch it together.",
+		title: "Customers don't speak in metrics. They use words to tell you what's wrong.",
+		lead: "No one should have to categorize thousands of conversations so the truth can show up in a chart.",
 		points: [
 			"Every question sends you back to exports, pivot tables, and analyst queues",
 			"Dashboards show what happened—not what it means for this week's decision",
@@ -39,7 +39,7 @@ export const theAnswerLayerPageContent = {
 	overview: {
 		eyebrow: "What it is",
 		title: "One intelligence layer above your customer stack.",
-		lead: "The Answer Layer is not another dashboard or chatbot. It is the governed layer that sits on top of your operational data, unifies what customers are telling you across every channel, and returns sourced answers—when you ask, when you wake up, or while you sleep.",
+		lead: "Built for the words your customers use—not just the numbers your systems store. The Answer Layer sits on top of your operational data, unifies what customers are telling you across every channel, and returns sourced answers—when you ask, when you wake up, or while you sleep.",
 		points: [
 			"Connect your stack once; every experience draws from the same canonical customer picture",
 			"Every answer traces back to the sources you connect—ready to validate before you share it upstream",
@@ -93,7 +93,7 @@ export const theAnswerLayerPageContent = {
 			{
 				title: "Monitor mode",
 				description:
-					"Hire AI Agents to watch the layer around the clock. They surface churn risk, emerging themes, and coaching moments before they become fire drills.",
+					"Our AI Agents don't wait for you to ask. They monitor your data 24/7 and bring their Findings to you.",
 				demo: "monitor" as const,
 			},
 		],
@@ -121,7 +121,7 @@ export const theAnswerLayerPageContent = {
 			{
 				title: "AI Agents",
 				description:
-					"A scalable team that monitors the layer for you—turn agents on when you need coverage, off when you don't.",
+					"A scalable team that monitors the layer for you. Our AI Agents don't wait for you to ask—they bring Findings to you. Turn agents on when you need coverage, off when you don't.",
 				href: "/hire-your-team",
 				cta: "Hire your AI team",
 			},
@@ -136,7 +136,7 @@ export const theAnswerLayerPageContent = {
 	},
 	stackIntegration: {
 		eyebrow: "Getting started",
-		title: "Your stack in. Governed intelligence out.",
+		title: "Messy data in. Governed intelligence out.",
 		description:
 			"The Answer Layer starts with the CRM, support, and conversation tools you already run. We connect and normalize them—you start seeing answers in days, not months.",
 		connectors: [
@@ -146,8 +146,6 @@ export const theAnswerLayerPageContent = {
 			{ name: "Intercom", logo: "/images/connectors/intercom.png" },
 			{ name: "Dynamics 365", logo: "/images/connectors/dynamics-365.png" },
 			{ name: "Freshworks", logo: "/images/connectors/freshworks.png" },
-			{ name: "Gladly", logo: "/images/connectors/gladly.png" },
-			{ name: "Talkdesk", logo: "/images/connectors/talkdesk.png" },
 		],
 		connectorNote:
 			"Don't see your stack? Tell us what you use—we'll tell you how fast you can be live.",
@@ -197,7 +195,7 @@ export const theAnswerLayerPageContent = {
 		title: "Still deciding? Start here.",
 	},
 	cta: {
-		title: "See the Answer Layer on data that looks like yours.",
+		title: "See the Answer Layer in action.",
 		description:
 			"In a 30-minute walkthrough, we'll connect a sample of your stack, show you Ask mode and a Daily Brief, and help you pick the first agents to hire.",
 		primaryCta: "Book a demo",

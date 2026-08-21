@@ -24,7 +24,10 @@ export const Route = createFileRoute("/blog/$slug")({
 			});
 		}
 
-		return createArticleHeadFromPost(loaderData.post.seo);
+		return createArticleHeadFromPost({
+			...loaderData.post.seo,
+			noIndex: true,
+		});
 	},
 	component: BlogPostRoute,
 });

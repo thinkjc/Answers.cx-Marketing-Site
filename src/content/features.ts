@@ -38,7 +38,7 @@ export const featuresPageContent = {
 			{
 				title: "Monitor mode",
 				description:
-					"Hire AI Agents to watch your customer data around the clock. They surface churn risk, emerging themes, and coaching opportunities before they become fire drills.",
+					"Our AI Agents don't wait for you to ask. They monitor your data 24/7 and bring their Findings to you.",
 				demo: "monitor" as const,
 			},
 		],
@@ -98,7 +98,7 @@ export const featuresPageContent = {
 		{
 			title: "AI Agents",
 			description:
-				"Hire a scalable AI workforce for churn, feedback, compliance, revenue, and more. Turn them on when you need them, off when you don't—you stay in control.",
+				"Our AI Agents don't wait for you to ask. They monitor your data 24/7 and bring their Findings to you. Turn them on when you need coverage, off when you don't.",
 			highlights: [
 				"Pre-built roles for common CX and ops workflows",
 				"Custom agents for your unique business",

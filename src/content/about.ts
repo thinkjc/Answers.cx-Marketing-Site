@@ -4,8 +4,9 @@ export const aboutContent = {
 	seo: {
 		title: "About Us",
 		description:
-			"cxconnect.ai is reinventing how innovative brands manage their multilingual customer support operations.",
+			"Answers.cx is reinventing how innovative brands manage their multilingual customer support operations.",
 		path: "/about",
+		noIndex: true,
 	} satisfies PageSeoContent,
 	hero: {
 		eyebrow: "About us",
@@ -13,8 +14,8 @@ export const aboutContent = {
 		lead: "Our mission is to bridge the gap between complexity and efficiency, ensuring every organization can thrive in a digital-first world.",
 	},
 	story: {
-		title: "About cxconnect.ai",
-		body: "cxconnect.ai is reinventing how innovative brands manage their multilingual customer support operations by providing simple and more delightful customer and agent experiences in every language.",
+		title: "About Answers.cx",
+		body: "Answers.cx is reinventing how innovative brands manage their multilingual customer support operations by providing simple and more delightful customer and agent experiences in every language.",
 	},
 	mission: {
 		title: "Making software better for everyone",
@@ -22,7 +23,7 @@ export const aboutContent = {
 	},
 	awards: {
 		title: "Most Innovative Tech Startup of the Year",
-		lead: "Cxconnect.ai is honored to be recognized as a Grand Golden Globee® winner as we continue to disrupt the CX landscape with our innovative multilingual messaging platform.",
+		lead: "Answers.cx is honored to be recognized as a Grand Golden Globee® winner as we continue to disrupt the CX landscape with our innovative multilingual messaging platform.",
 		items: [
 			"Innovative Use of Technology in Customer Service",
 			"Most Innovative Tech Startup of the Year",

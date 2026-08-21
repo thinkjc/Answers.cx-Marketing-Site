@@ -1,4 +1,4 @@
-# cxconnect.ai marketing site
+# Answers.cx marketing site
 
 TanStack Start app for the public marketing site. Uses **pnpm** as the package manager.
 

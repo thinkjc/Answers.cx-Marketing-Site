@@ -109,8 +109,6 @@ export const connectorsStackIntegration = {
 		{ name: "Intercom", logo: "/images/connectors/intercom.png" },
 		{ name: "Dynamics 365", logo: "/images/connectors/dynamics-365.png" },
 		{ name: "Freshworks", logo: "/images/connectors/freshworks.png" },
-		{ name: "Gladly", logo: "/images/connectors/gladly.png" },
-		{ name: "Talkdesk", logo: "/images/connectors/talkdesk.png" },
 	],
 	connectorNote:
 		"Don't see your stack? Tell us what you use—we'll tell you how fast you can be live.",
@@ -198,24 +196,6 @@ export const supportedConnectors: Connector[] = [
 		dataSources: "Tickets, chats, knowledge articles, SLA metadata",
 	},
 	{
-		slug: "gladly",
-		name: "Gladly",
-		logo: "/images/connectors/gladly.png",
-		description:
-			"Connect people-centric conversation history so your team sees the full customer relationship—not just the latest ticket.",
-		category: "platform",
-		dataSources: "Conversations, customer profiles, topics, agent notes",
-	},
-	{
-		slug: "talkdesk",
-		name: "Talkdesk",
-		logo: "/images/connectors/talkdesk.png",
-		description:
-			"Layer call-center transcripts and quality signals into Ask mode and Daily Briefs for leaders who live in the queue.",
-		category: "platform",
-		dataSources: "Call recordings, transcripts, disposition codes, QA scores",
-	},
-	{
 		slug: "gorgias",
 		name: "Gorgias",
 		description:
@@ -257,7 +237,7 @@ export const connectorsFaqItems: FaqItem[] = [
 			"Plans scale with conversation volume and the number of integrations you connect—not seats. We'll size the right fit on one call based on your stack and how much customer data you want in scope.",
 	},
 	{
-		question: "What permissions does cxconnect.ai need?",
+		question: "What permissions does Answers.cx need?",
 		answer:
 			"Read access to the customer conversation and CRM data you want analyzed—nothing more than what's required to surface governed insights. We'll walk your InfoSec team through scopes, retention, and pause controls before anything goes live.",
 	},

@@ -1,8 +1,9 @@
 import { Link } from "@tanstack/react-router";
 
 import { BannerPill } from "#/components/marketing/banner-pill.tsx";
-import { MarketingHero } from "#/components/marketing/marketing-hero.tsx";
 import { MarketingCard } from "#/components/marketing/marketing-card.tsx";
+import { MarketingCloser } from "#/components/marketing/marketing-closer.tsx";
+import { MarketingHero } from "#/components/marketing/marketing-hero.tsx";
 import { SectionBand } from "#/components/marketing/section-band.tsx";
 import { Button } from "#/components/ui/button.tsx";
 import type { ProductPageContent } from "#/content/products.ts";
@@ -83,6 +84,8 @@ export function ProductPage({ content }: ProductPageProps) {
 					))}
 				</div>
 			</SectionBand>
+
+			<MarketingCloser />
 		</>
 	);
 }

@@ -12,6 +12,7 @@ import {
 import { DailyBriefHeroGraphic } from "#/components/marketing/daily-brief-hero-graphic.tsx";
 import { DailySignalHeroGraphic } from "#/components/marketing/daily-signal-hero-graphic.tsx";
 import { MarketingCard } from "#/components/marketing/marketing-card.tsx";
+import { MarketingCloser } from "#/components/marketing/marketing-closer.tsx";
 import { MeshGradient } from "#/components/marketing/mesh-gradient.tsx";
 import { SectionBand } from "#/components/marketing/section-band.tsx";
 import { TrustedByCarousel } from "#/components/marketing/trusted-by-carousel.tsx";
@@ -187,6 +188,8 @@ export function DailySignalPage() {
 					))}
 				</ol>
 			</SectionBand>
+
+			<MarketingCloser />
 
 			<SectionBand>
 				<div className="mx-auto max-w-3xl text-center">

@@ -6,15 +6,18 @@ type LegalDocumentPageProps = {
 
 export function LegalDocumentPage({ content }: LegalDocumentPageProps) {
 	return (
-		<article className="prose prose-neutral mx-auto max-w-3xl">
-			<h1 className="text-display-lg">{content.title}</h1>
-			<p className="text-caption text-mute">
+		<article className="mx-auto max-w-3xl">
+			<h1 className="text-display-lg text-ink">{content.title}</h1>
+			<p className="mt-3 text-caption text-mute">
+				{content.version ? `${content.version} · ` : ""}
 				Last updated: {content.lastUpdated}
 			</p>
 			{content.sections.map((section) => (
 				<section key={section.heading} className="mt-10">
-					<h2 className="text-display-sm">{section.heading}</h2>
-					<p className="text-body-md text-body">{section.body}</p>
+					<h2 className="text-display-sm font-medium text-ink">
+						{section.heading}
+					</h2>
+					<p className="mt-3 text-body-md text-body">{section.body}</p>
 				</section>
 			))}
 		</article>

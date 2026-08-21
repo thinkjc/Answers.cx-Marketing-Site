@@ -26,7 +26,7 @@ export function StackIntegrationStrip({
 			</div>
 
 			<div className="mx-auto mt-10 max-w-4xl md:mt-12">
-				<ul className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+				<ul className="grid grid-cols-2 gap-3 sm:grid-cols-3">
 					{content.connectors.map((connector) => (
 						<li
 							key={connector.name}

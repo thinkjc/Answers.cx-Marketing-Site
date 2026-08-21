@@ -4,7 +4,7 @@ export const pricingContent = {
 	seo: {
 		title: "Pricing",
 		description:
-			"Flexible cxconnect.ai plans starting at $1,950 per month. Custom packages based on conversation volume and connectors—never charged by seat.",
+			"Flexible Answers.cx plans starting at $1,950 per month. Custom packages based on conversation volume and connectors—never charged by seat.",
 		path: "/pricing",
 	} satisfies PageSeoContent,
 	hero: {
@@ -18,28 +18,23 @@ export const pricingContent = {
 		price: "$1,950",
 		period: "per month",
 		description:
-			"Our packages depend on your team's monthly conversation volume and the connectors you plug into cxconnect.ai.",
+			"Our packages depend on your team's monthly conversation volume and the connectors you plug into Answers.cx.",
 		promise:
 			"Our promise? You'll never be charged by seat, which means anyone in your organization can get the insights they need.",
 	},
 	featuresTitle: "Key features for your team:",
 	features: [
-		"SSO & Okta",
+		"SSO",
 		"User segmentation",
-		"HIPAA compliance",
 		"GDPR compliance",
-		"API access",
 		"Real-time alerts",
 		"Tailored onboarding",
 		"AI Agent roster",
-		"PII removal",
-		"Multilingual support",
 	],
 	customers: {
-		eyebrow: "Customers",
+		eyebrow: "Trusted Clients",
 		title: "Trusted by the most customer-centric and innovative teams.",
 		lead: "Driving product excellence—for global businesses that value customer-led growth.",
-		tagline: "Revealing what matters to build what's loved.",
 	},
 	faq: [
 		{

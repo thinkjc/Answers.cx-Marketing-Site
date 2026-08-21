@@ -44,16 +44,12 @@ export const explorePlans = {
 	segments: [],
 	featuresLabel: "Every plan includes:",
 	features: [
-		"SSO & Okta",
+		"SSO",
 		"User segmentation",
-		"HIPAA compliance",
 		"GDPR compliance",
-		"API access",
 		"Real-time alerts",
 		"Tailored onboarding",
 		"Full AI Agent roster",
-		"PII removal",
-		"Multilingual support",
 	],
 	cta: { label: "Talk to us about pricing", href: "/contact" },
 	ctaCaption:
@@ -88,8 +84,6 @@ export const stackIntegration = {
 		{ name: "Intercom", logo: "/images/connectors/intercom.png" },
 		{ name: "Dynamics 365", logo: "/images/connectors/dynamics-365.png" },
 		{ name: "Freshworks", logo: "/images/connectors/freshworks.png" },
-		{ name: "Gladly", logo: "/images/connectors/gladly.png" },
-		{ name: "Talkdesk", logo: "/images/connectors/talkdesk.png" },
 	],
 	connectorNote:
 		"Don't see your stack? Tell us what you use—we'll tell you how fast you can be live.",

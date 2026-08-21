@@ -10,6 +10,7 @@ import {
 
 import { CompanyPulseHeroGraphic } from "#/components/marketing/company-pulse-hero-graphic.tsx";
 import { MarketingCard } from "#/components/marketing/marketing-card.tsx";
+import { MarketingCloser } from "#/components/marketing/marketing-closer.tsx";
 import { MeshGradient } from "#/components/marketing/mesh-gradient.tsx";
 import { SectionBand } from "#/components/marketing/section-band.tsx";
 import { TrustedByCarousel } from "#/components/marketing/trusted-by-carousel.tsx";
@@ -176,6 +177,8 @@ export function CompanyPulsePage() {
 					))}
 				</ol>
 			</SectionBand>
+
+			<MarketingCloser />
 
 			<SectionBand>
 				<div className="mx-auto max-w-3xl text-center">

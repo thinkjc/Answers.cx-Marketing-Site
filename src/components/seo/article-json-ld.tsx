@@ -70,7 +70,7 @@ export function BlogIndexJsonLd() {
 	const jsonLd = {
 		"@context": "https://schema.org",
 		"@type": "Blog",
-		name: "Now — cxconnect.ai",
+		name: `Now — ${siteConfig.name}`,
 		description:
 			"Product updates, customer stories, and guidance on the answer layer for CX leaders.",
 		url: `${siteConfig.url}/blog`,

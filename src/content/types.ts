@@ -8,6 +8,7 @@ export type PageSeoContent = {
 export type LegalDocumentContent = {
 	seo: PageSeoContent;
 	title: string;
+	version?: string;
 	lastUpdated: string;
 	sections: { heading: string; body: string }[];
 };
