@@ -72,7 +72,7 @@ export type StackIntegrationContent = {
 
 export const stackIntegration = {
 	eyebrow: "How it works in your stack",
-	title: "Live on your data before your next team sync.",
+	title: "Live with your data before your next team sync.",
 	description:
 		"Connect the tools you already use and your AI Agents start working—no six-month integration project. No weekends lost to data mapping.",
 	// PLACEHOLDER connectors — add real connector names and `logo` paths once the
@@ -118,8 +118,6 @@ export type SocialProofContent = {
 	};
 };
 
-// PLACEHOLDER social proof — replace stats and the quote with real, approved
-// customer numbers and attribution before launch.
 export const socialProof = {
 	eyebrow: "Proven impact",
 	title: "Teams move faster when the signal finds them.",
@@ -131,9 +129,9 @@ export const socialProof = {
 	],
 	quote: {
 		text: "The Daily Brief replaced our Monday scramble. We walk into leadership already knowing what changed across our customers—and exactly what to do about it.",
-		name: "Add a customer name",
-		role: "VP of Customer Experience",
-		company: "Fortune 500 Enterprise",
+		name: "Jon Armour",
+		role: "Director of CX",
+		company: "JAGGAER",
 	},
 } as const satisfies SocialProofContent;
 

@@ -7,7 +7,6 @@ import {
 	Headphones,
 	Mail,
 	MousePointerClick,
-	Play,
 	Users,
 } from "lucide-react";
 
@@ -112,10 +111,6 @@ const showcaseFeatures: ShowcaseFeature[] = [
 		cta: {
 			label: "Book a demo",
 			href: "/contact",
-			secondary: {
-				label: "Play Daily Brief",
-				href: "/daily-signal",
-			},
 		},
 		span: "wide",
 		hideFromGrid: true,
@@ -786,9 +781,6 @@ export function HomeAnswerLayerShowcaseSection({
 										className="w-full sm:w-auto"
 									>
 										<Link to={activeFeature.cta.secondary.href}>
-											{activeFeature.id === "daily-brief" ? (
-												<Play className="size-4 fill-current" aria-hidden />
-											) : null}
 											{activeFeature.cta.secondary.label}
 										</Link>
 									</Button>

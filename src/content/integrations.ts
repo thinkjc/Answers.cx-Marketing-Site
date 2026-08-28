@@ -99,7 +99,7 @@ export const dataConnectorsPageContent = {
 
 export const connectorsStackIntegration = {
 	eyebrow: "How it works in your stack",
-	title: "Live on your data before your next team sync.",
+	title: "Live with your data before your next team sync.",
 	description:
 		"Connect the tools you already use and your AI Agents start working—no six-month integration project. No weekends lost to data mapping.",
 	connectors: [

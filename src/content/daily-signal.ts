@@ -55,7 +55,7 @@ export const dailySignalPageContent = {
 	whyItMatters: {
 		title: "Why leaders start their day here",
 		description:
-			"Most teams don't lack data—they lack time to turn it into decisions. The Daily Signal and Daily Brief replace the morning scramble with clarity you can act on.",
+			"Most teams don't lack data—they lack time to turn it into decisions. Your Daily Brief replaces the morning scramble with clarity you can act on.",
 		items: [
 			{
 				title: "Act before standup",
@@ -83,9 +83,9 @@ export const dailySignalPageContent = {
 					"Plug in support, CRM, surveys, reviews, and call transcripts. The Answer Layer unifies them into one intelligence layer.",
 			},
 			{
-				title: "The Daily Signal watches",
+				title: "Your AI Agents monitor",
 				description:
-					"AI Agents and your Chief of Staff monitor overnight activity—surfacing risks, opportunities, and patterns automatically.",
+					"AI Agents and your Chief of Staff monitor activity—surfacing risks, opportunities, and patterns automatically.",
 			},
 			{
 				title: "Your Daily Brief arrives",

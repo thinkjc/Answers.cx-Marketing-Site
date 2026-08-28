@@ -13,12 +13,18 @@ const config = defineConfig({
     dedupe: ['react', 'react-dom'],
   },
   server: {
+    host: "127.0.0.1",
     port: 3000,
     strictPort: true,
   },
   plugins: [
     devtools(),
-    nitro({ rollupConfig: { external: [/^@sentry\//] } }),
+    // Vercel's web entry format breaks SSR at runtime (srvx reads an undefined
+    // `runtime.node`), so build the Node entry instead.
+    nitro({
+      rollupConfig: { external: [/^@sentry\//] },
+      vercel: { entryFormat: 'node' },
+    }),
     tailwindcss(),
     tanstackStart(),
     viteReact(),

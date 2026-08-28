@@ -65,7 +65,7 @@ export function SocialProofSection({
 							{quote.name}
 						</span>
 						<span className="block text-caption text-body">
-							{quote.role}, {quote.company}
+							{quote.role} at {quote.company}
 						</span>
 					</span>
 				</figcaption>
